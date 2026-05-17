@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://flowboard-backend-kohl.vercel.app',
         changeOrigin: true,
       },
     },

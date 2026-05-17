@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "http://flowboard.centralindia.cloudapp.azure.com:5000/api/:path*"
+      "destination": "https://flowboard-backend-kohl.vercel.app/api/:path*"
     },
     {
       "source": "/(.*)",

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? '/'
-  : (window.location.protocol === 'https:' ? '/' : 'http://flowboard.centralindia.cloudapp.azure.com:5000/');
+  : (window.location.protocol === 'https:' ? '/' : 'https://flowboard-backend-kohl.vercel.app/');
 
 const api = axios.create({
   baseURL: apiHost,
