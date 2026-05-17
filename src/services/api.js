@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? '/'
+  : `${window.location.protocol}//${window.location.hostname}:5000/`;
+
 const api = axios.create({
-  baseURL: '/',
+  baseURL: apiHost,
   headers: {
     'Content-Type': 'application/json',
   },
